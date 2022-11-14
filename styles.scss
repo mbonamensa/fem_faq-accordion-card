@@ -22,7 +22,7 @@ $light-grayish-blue: hsl(240, 5%, 91%);
 
 body {
     background-color: $soft-blue;
-    background-image: linear-gradient(180deg, #676EE9 0%, #6565E7 100%);
+    background-image: linear-gradient(180deg, $soft-violet 0%, $soft-blue 100%);
     font-size: 1.1rem;
     font-family: 'Kumbh Sans', sans-serif;
     color: $very-dark-grayish-blue;
@@ -49,12 +49,13 @@ img {
     background-repeat: no-repeat;
     background-position: top;
     width: 85%;
-    background-size: 88%;
+    background-size: 98%;
     background-origin: content-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5rem 5rem -10px rgb(0 0 0 / 25%);
 
     .accordion {
         font-size: 1.1rem;
@@ -77,7 +78,7 @@ img {
             gap: 10px;
             width: 100%;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.85rem;
             color: $Very-dark-blue;
             
             &:hover {
@@ -87,6 +88,7 @@ img {
 
             &::after {
                 content: url(../img/icon-arrow-down.svg);
+                transition: 0.5s ease-in-out;
 
             }
         }
@@ -98,22 +100,18 @@ img {
     }
 
     .answer {
-        font-size: 0.8rem;
+        font-size: 0.65rem;
         
         padding-right: 17px;
         color: $dark-grayish-blue;
-        // display: block;
-        // max-height: 0;
-        // overflow: hidden;
     }
 }
 
 
 .woman-img {
     position: absolute;
-    top: -21.41%;
+    top: -15.41%;
     width: 70%;   
-    height: 50%;
     object-fit: contain;
 }
 
@@ -143,7 +141,6 @@ footer {
 }
 
 .question-wrapper.active .answer {
-    // max-height: 500px;
     padding-bottom: 15px;
 }
 
@@ -185,20 +182,21 @@ footer {
         left: -68px;
         bottom: 156px;
         width: 43%;
+        height: 50%;
 
-        &::before {
-            background-image: url(../img/illustration-box-desktop.svg);
-            background-repeat: no-repeat;
-            background-size: 50%;
-            position: absolute;
-            left: 6px;
-            top: 114px;
-            width: 70%;
-            height: 100%;
-            display: inline-block;
-            content: "";
-            z-index: 100;
-        }
+        // &::before {
+        //     background-image: url(../img/illustration-box-desktop.svg);
+        //     background-repeat: no-repeat;
+        //     background-size: 50%;
+        //     position: absolute;
+        //     left: 6px;
+        //     top: 114px;
+        //     width: 70%;
+        //     height: 100%;
+        //     display: inline-block;
+        //     content: "";
+        //     z-index: 100;
+        // }
     }
 
 }

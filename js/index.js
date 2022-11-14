@@ -1,6 +1,6 @@
 // grab elements from the DOM
 const wrappers = document.querySelectorAll(".question-wrapper")
-const questions = document.querySelectorAll("h3")
+const questions = document.querySelectorAll("h2")
 const answers = document.querySelectorAll(".answer")
 
 // toggle function

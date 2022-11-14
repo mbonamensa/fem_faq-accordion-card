@@ -7,7 +7,7 @@
 
 body {
   background-color: hsl(240deg, 73%, 65%);
-  background-image: linear-gradient(180deg, #676EE9 0%, #6565E7 100%);
+  background-image: linear-gradient(180deg, hsl(273deg, 75%, 66%) 0%, hsl(240deg, 73%, 65%) 100%);
   font-size: 1.1rem;
   font-family: "Kumbh Sans", sans-serif;
   color: hsl(237deg, 12%, 33%);
@@ -34,12 +34,13 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   width: 85%;
-  background-size: 88%;
+  background-size: 98%;
   background-origin: content-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 5rem 5rem -10px rgba(0, 0, 0, 0.25);
 }
 .container .accordion {
   font-size: 1.1rem;
@@ -61,7 +62,7 @@ img {
   gap: 10px;
   width: 100%;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: hsl(238deg, 29%, 16%);
 }
 .container .accordion button:hover {
@@ -69,22 +70,22 @@ img {
 }
 .container .accordion button::after {
   content: url(../img/icon-arrow-down.svg);
+  transition: 0.5s ease-in-out;
 }
 .container .question-wrapper {
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
   cursor: pointer;
 }
 .container .answer {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   padding-right: 17px;
   color: hsl(240deg, 6%, 50%);
 }
 
 .woman-img {
   position: absolute;
-  top: -21.41%;
+  top: -15.41%;
   width: 70%;
-  height: 50%;
   object-fit: contain;
 }
 
@@ -142,18 +143,6 @@ footer a:hover {
     left: -68px;
     bottom: 156px;
     width: 43%;
-  }
-  .woman-img::before {
-    background-image: url(../img/illustration-box-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    position: absolute;
-    left: 6px;
-    top: 114px;
-    width: 70%;
-    height: 100%;
-    display: inline-block;
-    content: "";
-    z-index: 100;
+    height: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

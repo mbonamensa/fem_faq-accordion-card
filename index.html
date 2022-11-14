@@ -8,12 +8,6 @@
   <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | FAQ Accordion Card by Maame</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
 <body>
   <main>
@@ -26,8 +20,8 @@
     <div id="accordion" class="accordion">
       <h1>FAQ</h1>
       <div class="question-wrapper">
-        <h3><button aria-controls="id-1" aria-expanded="false">How many team members can I invite?</button></h3>
-        <div class="answer" aria-controls="id-1" hidden>
+        <h2><button aria-controls="answer-1" aria-expanded="false">How many team members can I invite?</button></h2>
+        <div class="answer" id="answer-1" hidden>
           <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
             team members for the Premium plan.
           </p>
@@ -35,16 +29,16 @@
       </div>
     
       <div class="question-wrapper active">
-        <h3><button aria-controls="id-1" aria-expanded="true">What is the maximum file upload size?</button></h3>
-        <div class="answer" aria-controls="id-1">
+        <h2><button aria-controls="answer-2" aria-expanded="true">What is the maximum file upload size?</button></h2>
+        <div class="answer" id="answer-2">
           <p>No more than 2GB. All files in your account must fit your allotted storage space.
           </p>
         </div>
       </div>
       
       <div class="question-wrapper">
-        <h3><button aria-controls="id-1" aria-expanded="false">How do I reset my password?</button></h3>
-        <div class="answer" aria-controls="id-1" hidden>
+        <h2><button aria-controls="answer-3" aria-expanded="false">How do I reset my password?</button></h2>
+        <div class="answer" id="answer-3" hidden>
           <p>Click “Forgot password” from the login page or “Change password” from your profile page.
             A reset link will be emailed to you.
           </p>
@@ -52,16 +46,16 @@
       </div>
       
       <div class="question-wrapper">
-        <h3><button aria-controls="id-1" aria-expanded="false">Can I cancel my subscription?</button></h3>
-        <div class="answer" aria-controls="id-1" hidden>
+        <h2><button aria-controls="answer-4" aria-expanded="false">Can I cancel my subscription?</button></h2>
+        <div class="answer" id="answer-4" hidden>
           <p>Yes! Send us a message and we'll process your request no questions asked.
           </p>
         </div>
       </div>
   
       <div class="question-wrapper">
-        <h3><button aria-controls="id-1" aria-expanded="false">Do you provide additional support?</button></h3>
-        <div class="answer" aria-controls="id-1" hidden>
+        <h2><button aria-controls="answer-5" aria-expanded="false">Do you provide additional support?</button></h2>
+        <div class="answer" id="answer-5" hidden>
           <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
           </p>
         </div>
