@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | FAQ Accordion Card by Maame</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main>
+    <section class="container">
+      <picture class="woman-img">
+        <source media="(min-width: 700px)" srcset="img/illustration-woman-online-desktop.svg">
+        <img src="img/illustration-woman-online-mobile.svg" alt="illustration woman">
+      </picture>
+      
+    <div id="accordion" class="accordion">
+      <h1>FAQ</h1>
+      <div class="question-wrapper">
+        <h3><button aria-controls="id-1" aria-expanded="false">How many team members can I invite?</button></h3>
+        <div class="answer" aria-controls="id-1" hidden>
+          <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </div>
+      </div>
+    
+      <div class="question-wrapper active">
+        <h3><button aria-controls="id-1" aria-expanded="true">What is the maximum file upload size?</button></h3>
+        <div class="answer" aria-controls="id-1">
+          <p>No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+      </div>
+      
+      <div class="question-wrapper">
+        <h3><button aria-controls="id-1" aria-expanded="false">How do I reset my password?</button></h3>
+        <div class="answer" aria-controls="id-1" hidden>
+          <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </div>
+      </div>
+      
+      <div class="question-wrapper">
+        <h3><button aria-controls="id-1" aria-expanded="false">Can I cancel my subscription?</button></h3>
+        <div class="answer" aria-controls="id-1" hidden>
+          <p>Yes! Send us a message and we'll process your request no questions asked.
+          </p>
+        </div>
+      </div>
+  
+      <div class="question-wrapper">
+        <h3><button aria-controls="id-1" aria-expanded="false">Do you provide additional support?</button></h3>
+        <div class="answer" aria-controls="id-1" hidden>
+          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </div>
+    
+    </div>
+   
+    </section>
+   
+  </main>
+  
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="mbonamensa.netlify.app">Maame Yaa Serwaa Bona-Mensa</a>.
+    </p> 
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
